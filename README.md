@@ -18,8 +18,11 @@ Data for this project comes from the Centers for Medicare and Medicaid Services.
 
 This repo contains the following 
 
-README.txt                     A plain text version of README
-opiate_analysis.ipynb          A Jupiter Notebook File for DataStructure visualization
-opiate_analysis.py             A Python file for Datastructure visualization
- op_data.csv                   Data set provided by the Medicare and Medicaid Services
+README.txt:                    A plain text version of README.
+
+opiate_analysis.ipynb:         A Jupiter Notebook File for DataStructure visualization.
+
+opiate_analysis.py:            A Python file for Datastructure visualization.
+
+op_data.csv:                   Data set provided by the Medicare and Medicaid Services.
 
