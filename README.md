@@ -4,7 +4,7 @@ Project completed by Saransh Rakshak for the course of Digital Humanities 100, S
 
 Individual doctor identification numbers have been hidden from data structures to prevent use of this tool in 'Doctor Shopping', where individuals may seek out certain doctors who more frequently write opiate prescriptions.
 
-For further questions, or for full access to the opiate distribution data including doctor identification numbers, please feel free to reach out to me at srakshak@berkeley.edu 
+For further questions, or for full access to the opiate distribution data including doctor identification numbers, please feel free to reach out to me at srakshak@berkeley.edu.
 
 --------------------------------------------------------------
 
