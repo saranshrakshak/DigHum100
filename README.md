@@ -10,5 +10,16 @@ For further questions, or for full access to the opiate distribution data includ
 
 The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of prescriptions written by doctors in that area code.
 
+--------------------------------------------------------------
+
 Data for this project comes from the Centers for Medicare and Medicaid Services.
+
+--------------------------------------------------------------
+
+This repo contains the following 
+
+README.txt---------------------A plain text version of README
+opiate_analysis.ipynb----------A Jupiter Notebook File for DataStructure visualization
+opiate_analysis.py-------------A Python file for Datastructure visualization
+op_data.csv--------------------Data set provided by the Medicare and Medicaid Services
 
