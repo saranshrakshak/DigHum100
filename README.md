@@ -8,7 +8,7 @@ For further questions, or for full access to the opiate distribution data includ
 
 --------------------------------------------------------------
 
-The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of prescriptions written by doctors in that area code.
+The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of narcotic prescriptions written by doctors in that area code.
 
 --------------------------------------------------------------
 
