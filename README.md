@@ -2,7 +2,7 @@
 Saransh's repo for UC Berkeley's Digital Humanities 100 Summer 2021 taught by Prof. Adam Anderson. 
 Project completed by Saransh Rakshak for the course of Digital Humanities 100, Summer 2021 at UC Berkeley, taught by Dr.Adam Anderson.
 
-Individual doctor identification numbers have been hidden from data structures to prevent use of this tool in 'Doctor Shopping', where patients may seek out certain doctors who more frequently write opiate prescriptions.
+Individual doctor identification numbers(National Provider Identifier) and doctor names have been hidden from data structures to prevent use of this tool in 'Doctor Shopping', where patients may seek out certain doctors who more frequently write opiate prescriptions.
 
 For further questions, or for full access to the opiate distribution data including doctor identification numbers, please feel free to reach out to me at srakshak@berkeley.edu.
 
