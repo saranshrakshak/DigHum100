@@ -16,7 +16,7 @@ Data for this project comes from the Centers for Medicare and Medicaid Services.
 
 --------------------------------------------------------------
 
-This repo contains the following 
+This repo contains the following...
 
 README.txt:                    A plain text version of README.
 
