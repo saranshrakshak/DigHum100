@@ -1,10 +1,10 @@
 # DigHum100
-Saransh's repo for UC Berkeley's Digital Humanities 100 Summer 2021 taught by Prof. Adam Anderson. 
+Saransh's repo for UC Berkeley's Digital Humanities 100. 
 Project completed by Saransh Rakshak for the course of Digital Humanities 100, Summer 2021 at UC Berkeley, taught by Dr.Adam Anderson.
 
 The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of narcotic prescriptions written by doctors in that area code.
 
-For further questions, or for full access to the opiate distribution data including doctor identification numbers, please feel free to reach out to me at srakshak@berkeley.edu.
+For further questions, or for full access to the opiate distribution data including doctor identification numbers and speciific opiate prescriptions written by these doctors, please feel free to reach out to me at srakshak@berkeley.edu.
 
 --------------------------------------------------------------
 
