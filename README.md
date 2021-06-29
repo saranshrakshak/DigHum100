@@ -22,6 +22,6 @@ opiate_analysis.py:            A Python file for Datastructure visualization.
 
 op_data.csv:                   Data set provided by the Center for Medicare and Medicaid Services.
 
-IRSIncomeByZipCode.csv:        Data set for zip code average incomes provided by the IRS and modified by Jon Loyens (@jonloyens) on data.world.
+IRSIncomeByZipCode.csv:        Data set for zip code average incomes provided by the IRS and modified by Jon Loyens (twitter@jonloyens) on data.world.
 
 storyboard_dighum.pdf:         A storyboard for this project.
