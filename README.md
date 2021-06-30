@@ -18,7 +18,7 @@ README.txt:                    A plain text version of README.
 
 opiate_analysis.ipynb:         A Jupiter Notebook File for DataStructure visualization.
 
-opiate_analysis.py:            A Python file for Datastructure visualization.
+opiate_analysis.py:            A Python script for Datastructure visualization.
 
 op_data.csv:                   Data set provided by the Center for Medicare and Medicaid Services.
 
