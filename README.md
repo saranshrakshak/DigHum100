@@ -28,6 +28,6 @@ storyboard_dighum.pdf:         A storyboard for this project.
 
 opiate_analysis.pfd:           A PDF of Python script of datastructure processing and visualization in Jupyter Notebook.
 
-dighumpresentation.mov:        A movie presentation of this project.
+dighumprespartX.mov:           A movie presentation of this project, zipped and saved in 3 parts.
 
 pres_slides_dighum.pdf:        Slides used in the video presentation.
