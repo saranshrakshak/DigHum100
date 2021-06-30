@@ -16,12 +16,14 @@ This repo contains the following...
 
 README.txt:                    A plain text version of README.
 
-opiate_analysis.ipynb:         A Jupiter Notebook File for DataStructure visualization.
+opiate_analysis.ipynb:         A Jupiter Notebook file for datastructure processing and visualization.
 
-opiate_analysis.py:            A Python script for Datastructure visualization.
+opiate_analysis.py:            A Python script for datastructure processing visualization.
 
 op_data.csv:                   Data set provided by the Center for Medicare and Medicaid Services.
 
 IRSIncomeByZipCode.csv:        Data set for zip code average incomes provided by the IRS and modified by Jon Loyens (twitter@jonloyens) on data.world.
 
 storyboard_dighum.pdf:         A storyboard for this project.
+
+opiate_analysis.pfd:           A PDF of Python script of datastructure processing and visualization in Jupyter Notebook.
