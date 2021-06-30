@@ -1,22 +1,18 @@
 # DigHum100
-Saransh's repo for UC Berkeley's Digital Humanities 100 Summer 2021 taught by Prof. Adam Anderson. 
+Saransh's repo for UC Berkeley's Digital Humanities 100. 
 Project completed by Saransh Rakshak for the course of Digital Humanities 100, Summer 2021 at UC Berkeley, taught by Dr.Adam Anderson.
 
-Individual doctor identification numbers have been hidden from data structures to prevent use of this tool in 'Doctor Shopping', where patients may seek out certain doctors who more frequently write opiate prescriptions.
+The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of narcotic prescriptions written by doctors in that area code.
 
-For further questions, or for full access to the opiate distribution data including doctor identification numbers, please feel free to reach out to me at srakshak@berkeley.edu.
-
---------------------------------------------------------------
-
-The purpose of this project was to analyze opiate prescription records in different area codes across the United States, and identify any relation between average income of an area code and patterns of prescriptions written by doctors in that area code.
+For further questions, or for full access to the opiate distribution data including doctor identification numbers and speciific opiate prescriptions written by these doctors, please feel free to reach out to me at srakshak@berkeley.edu.
 
 --------------------------------------------------------------
 
-Data for this project comes from the Centers for Medicare and Medicaid Services.
+Data for this project comes from the Centers for Medicare and Medicaid Services and Internal Revenue Service.
 
 --------------------------------------------------------------
 
-This repo contains the following 
+This repo contains the following...
 
 README.txt:                    A plain text version of README.
 
@@ -24,6 +20,8 @@ opiate_analysis.ipynb:         A Jupiter Notebook File for DataStructure visuali
 
 opiate_analysis.py:            A Python file for Datastructure visualization.
 
-op_data.csv:                   Data set provided by the Medicare and Medicaid Services.
+op_data.csv:                   Data set provided by the Center for Medicare and Medicaid Services.
+
+IRSIncomeByZipCode.csv:        Data set for zip code average incomes provided by the IRS and modified by Jon Loyens (twitter@jonloyens) on data.world.
 
 storyboard_dighum.pdf:         A storyboard for this project.
