@@ -26,4 +26,4 @@ IRSIncomeByZipCode.csv:        Data set for zip code average incomes provided by
 
 storyboard_dighum.pdf:         A storyboard for this project.
 
-opiate_analysis.pfd:           A PDF of Python script of datastructure processing and visualization in Jupyter Notebook.
+opiate_analysis.pfd:           A PDF Python script of datastructure processing and visualization in Jupyter Notebook.
