@@ -35,42 +35,42 @@ Number of Columns: 11
 """
 
 # %%
-op_data = pd.read_csv("op_2021_data.csv")
-op_data = op_data.rename(columns={'NPPES Provider Last Name': 'last_name',
-                                  'NPPES Provider First Name': 'first_name',
-                                  'NPPES Provider ZIP Code': 'zip_code', 'NPPES Provider State': 'state',
-                                  'Specialty Description': 'doc_spec',
-                                  'Total Claim Count': 'tot_presc_cnt',
-                                  'Opioid Claim Count': 'op_cnt', 'Opioid Prescribing Rate': 'op_rate',
-                                  'Long-Acting Opioid Claim Count': 'LA_op_cnt',
-                                  'Long-Acting Opioid Prescribing Rate': 'LA_op_rate'})
+op_data = pd.read_csv("data/op_2021_data.csv")
+op_data = op_data.rename(columns = {'NPPES Provider Last Name': 'last_name',
+                                    'NPPES Provider First Name': 'first_name',
+                                    'NPPES Provider ZIP Code': 'zip_code', 'NPPES Provider State':'state',
+                                    'Specialty Description':'doc_spec',
+                                    'Total Claim Count': 'tot_presc_cnt',
+                                    'Opioid Claim Count':'op_cnt', 'Opioid Prescribing Rate' : 'op_rate',
+                                    'Long-Acting Opioid Claim Count': 'LA_op_cnt',
+                                    'Long-Acting Opioid Prescribing Rate': 'LA_op_rate'})
 op_data.head()
 
 # %%
 """
 $\textbf{The dataset contains the following values:}$
 
-- NPI: National Provider Identifier for Doctor Identification.
+- $\textit{NPI}$: National Provider Identifier for Doctor Identification.
 
-- last_name:  Prescribing Doctor's Last Name.
+- $\textit{last\_name}$:  Prescribing Doctor's Last Name.
 
-- first_name: Prescribing Doctor's First Name.
+- $\textit{first\_name}$: Prescribing Doctor's First Name.
 
-- zip_code: Zip code of the doctor's location.
+- $\textit{zip\_code}$: Zip code of the doctor's location.
 
-- state: Prescribing Doctor's location.
+- $\textit{state}$: Prescribing Doctor's location.
 
-- doc_spec: Specialty of Doctor.
+- $\textit{doc\_spec}$: Specialty of Doctor.
 
-- tot_presc_cnt: Total amount of prescriptions by the doctor (inclusive of non-opioids).
+- $\textit{tot\_presc\_cnt}$: Total amount of prescriptions by the doctor (inclusive of non-opioids).
 
-- op_cnt: Amount of opioid prescriptions by the doctor.
+- $\textit{op\_cnt}$: Amount of opioid prescriptions by the doctor.
 
-- op_rate: Changes in the amount of opioid prescriptions over time by each individual doctor.
+- $\textit{op\_rate}$: Changes in the amount of opioid prescriptions over time by each individual doctor.
 
-- LA_op_cnt: Amount of Long-Acting opioid prescriptions by the doctor.
+- $\textit{LA\_op\_cnt}$: Amount of Long-Acting opioid prescriptions by the doctor.
 
-- LA_op_rate: Changes in the amount of Long-Acting opioid prescriptions over time by each individual doctor. 
+- $\textit{LA\_op\_rate}$: Changes in the amount of Long-Acting opioid prescriptions over time by each individual doctor. 
 """
 
 # %%
@@ -98,44 +98,44 @@ Number of Columns: 11
 """
 
 # %%
-income_data = pd.read_csv("IRSIncomeByZipCode.csv")
-income_data = income_data.rename(columns={'STATE': 'state', 'ZIPCODE': 'zip_code',
-                                          'Number of returns': 'num_tax_ret',
-                                          'Adjusted gross income (AGI)': 'zip_agi',
-                                          'Avg AGI': 'zip_avg_agi',
-                                          'Number of returns with total income': 'ret_w_total',
-                                          'Total income amount': 'sum_zip_income',
-                                          'Avg total income': 'zip_avg_income',
-                                          'Number of returns with taxable income': 'num_ret_taxable',
-                                          'Taxable income amount': 'taxable_amt',
-                                          'Avg taxable income': 'avg_taxable'})
+income_data = pd.read_csv("data/IRSIncomeByZipCode.csv")
+income_data = income_data.rename(columns = {'STATE':'state', 'ZIPCODE': 'zip_code',
+                                'Number of returns' : 'num_tax_ret', 
+                                'Adjusted gross income (AGI)': 'zip_agi',
+                                'Avg AGI': 'zip_avg_agi',
+                                'Number of returns with total income': 'ret_w_total',
+                                'Total income amount' : 'sum_zip_income',
+                                'Avg total income':'zip_avg_income',
+                                'Number of returns with taxable income':'num_ret_taxable',
+                                'Taxable income amount': 'taxable_amt',
+                                'Avg taxable income':'avg_taxable'})
 income_data.head()
 
 # %%
 """
 $\textbf{The dataset contains the following values:}$
 
-- state: The state the zip code is located in.
+- $\textit{state}$: The state the zip code is located in.
 
-- zip_code: Zip code.
+- $\textit{zip\_code}$: Zip code.
 
-- num_tax_ret: The number of tax returns filed in 2016.
+- $\textit{num\_tax\_ret}$: The number of tax returns filed in 2016.
 
-- zip_agi: Adjusted gross income for residents in a zip.
+- $\textit{zip\_agi}$: Adjusted gross income for residents in a zip.
 
-- zip_avg_agi: Average gross income for residents in a zip.
+- $\textit{zip\_avg\_agi}$: Average gross income for residents in a zip.
 
-- ret_w_total: Number of income tax returns with total income. 
+- $\textit{ret\_w\_total}$: Number of income tax returns with total income. 
 
-- sum_zip_income: Summation of all incomes of residents in a zip code.
+- $\textit{sum\_zip\_income}$: Summation of all incomes of residents in a zip code.
 
-- avg_income: Average income of residents in a zip code, in the thousands. (i.e. 52.3 = 52,300 amount earned, on average, by residents in a shared zip code)
+- $\textit{avg\_income}$: Average income of residents in a zip code, in the thousands. (i.e. 52.3 = 52,300 amount earned, on average, by residents in a shared zip code)
 
-- num_ret_taxable: Number of income tax returns with taxable income. 
+- $\textit{num\_ret\_taxable}$: Number of income tax returns with taxable income. 
 
-- taxable_amt: Summation of the total amount a zip can be taxed. 
+- $\textit{taxable\_amt}$: Summation of the total amount a zip can be taxed. 
 
-- avg_taxable: Average total taxable income for each area code, in the thousands. (i.e. 40.76 = 40,760 income tax paid by that zip code in 2016)
+- $\textit{avg\_taxable}$: Average total taxable income for each area code, in the thousands. (i.e. 40.76 = 40,760 income tax paid by that zip code in 2016)
 """
 
 # %%
@@ -149,24 +149,23 @@ Now we will clean up our dataframe for prescription data and income data by remo
 """
 
 # %%
-# Scrubbing Prescription Data
-# removing individual doctor identification, name, and total presciption count (tot_presc_cnt as it
-# contains non-opioid data).
-op_data = op_data[['zip_code', 'state', 'doc_spec',
-                   'op_cnt', 'op_rate', 'LA_op_cnt', 'LA_op_rate']]
-# removing doctors who have not prescribed any opioids
+#Scrubbing Prescription Data
+#removing individual doctor identification, name, and total presciption count (tot_presc_cnt as it 
+#contains non-opioid data).
+op_data = op_data[['zip_code', 'state', 'doc_spec', 'op_cnt', 'op_rate', 'LA_op_cnt', 'LA_op_rate']]
+#removing doctors who have not prescribed any opioids
 op_data = op_data[op_data['op_cnt'] > 0]
 
-# changing zip_code from type float to type int
+#changing zip_code from type float to type int
 op_data['zip_code'] = op_data['zip_code'].values.astype(int)
-# replacing Nan values in LA_op to 0, as Nan represents long acting opioids were not prescribed
+#replacing Nan values in LA_op to 0, as Nan represents long acting opioids were not prescribed
 op_data['LA_op_cnt'] = op_data['LA_op_cnt'].replace(np.nan, 0)
 op_data['LA_op_rate'] = op_data['LA_op_rate'].replace(np.nan, 0)
 
-# Scrubbing income data
-# removing unnecessary columns
+#Scrubbing income data
+#removing unnecessary columns
 income_data = income_data[['state', 'zip_code', 'zip_avg_income']]
-# removing all non 5 digit zip codes, false data
+#removing all non 5 digit zip codes, false data
 income_data = income_data[income_data['zip_code'].astype(str).str.len() == 5]
 
 # %%
@@ -180,7 +179,7 @@ Now, we will merge our two dataframes, op_data, which contains prescription info
 """
 
 # %%
-op_data = op_data.merge(right=income_data)
+op_data = op_data.merge(right = income_data)
 op_data
 
 # %%
@@ -190,14 +189,14 @@ op_data
 
 # %%
 """
-We will now produce visualizations using our finalized dataset, \textbf{op_data}.
+We will now produce visualizations using our finalized dataset, $\textbf{op\_data}$.
 
 $\textbf{1)}$ First, I would like to solve my primary question: Are opioids prescribed more frequently in certain states or zip codes with higher average income?
 """
 
 # %%
-# creating a temp dataframe zip_data to preserve original values when removing outliers and other data points
-# removing outliers for greater clarity
+#creating a temp dataframe zip_data to preserve original values when removing outliers and other data points
+#removing outliers for greater clarity 
 
 zip_df = op_data.groupby('zip_code').mean()
 
@@ -205,17 +204,18 @@ zip_df = zip_df[zip_df['zip_avg_income'] < 200]
 zip_df = zip_df[zip_df['op_cnt'] < 1000]
 
 
+
 zip_df['income_bin'] = zip_df['zip_avg_income'].values.astype(int)
 zip_df.head()
 
 # %%
-sns.lineplot(data=zip_df, x=zip_df['zip_avg_income'], y=zip_df['op_cnt'])
+sns.lineplot(data = zip_df, x  = zip_df['zip_avg_income'], y = zip_df['op_cnt'])
 plt.title('1.1) Avg. Income vs. Prescription Mean Raw Line Graph')
 plt.xlabel('Average Income (in $1000)')
 plt.ylabel('Mean Opioid Prescriptions')
 
 # %%
-sns.displot(zip_df, x='zip_avg_income', y='op_cnt')
+sns.displot(zip_df, x = 'zip_avg_income', y = 'op_cnt')
 
 plt.title('1.2) Average Income vs. Prescription Mean Heat Map')
 plt.xlabel('Average Income (in $1000)')
@@ -227,7 +227,7 @@ As the heatmap plot above can be difficult to read, we will use a Kernal Density
 """
 
 # %%
-sns.displot(zip_df, x='zip_avg_income', y='op_cnt', kind='kde')
+sns.displot(zip_df, x = 'zip_avg_income', y = 'op_cnt', kind = 'kde')
 
 plt.title('1.3) Average Income vs. Prescription Mean KDE')
 plt.xlabel('Average Income (in $1000)')
@@ -236,30 +236,32 @@ plt.ylabel('Mean Opioid Prescriptions')
 # %%
 """
 $\textbf{2)}$ 
-Now we will group our data values by state, using the income of all zips in a state to create a column for each state's average income, labeled \textbf{'state_avg_income'}. Certain states have additional limitations reguarding prescription. For instance, California requires that opioid naive (first time opioid users) must be limited to a 7 day (or less) prescription. 
+Now we will group our data values by state, using the income of all zips in a state to create a column for each state's average income, labeled $\textbf{state\_avg\_income}$. 
+
+Certain states have additional limitations reguarding prescription. For instance, California requires that opioid naive (first time opioid users) must be limited to a 7 day (or less) prescription. 
 
 States using additonal limitations reguarding opioids also include:
-Alaska, Hawaii, Colorado, Utah, Oklahoma, Louisiana, Missouri, Indiana, West Virginia, South Carolina, Pennsylvania, New York, Maine, Arizona, North Carolina, and New Jersy. These states are marked in GREEN.
+Alaska, Hawaii, Colorado, Utah, Oklahoma, Louisiana, Missouri, Indiana, West Virginia, South Carolina, Pennsylvania, New York, Maine, Arizona, 
+
+North Carolina, and New Jersy. These states are marked in GREEN.
 """
 
 # %%
 state_df = op_data.groupby('state').mean()
-state_df = state_df.rename(columns={'zip_avg_income': 'state_avg_income'})
-# reordering dataframe to go in order from low to high average income states
-state_df = state_df.sort_values(by=['state_avg_income'])
+state_df = state_df.rename(columns = {'zip_avg_income': 'state_avg_income'})
+#reordering dataframe to go in order from low to high average income states
+state_df = state_df.sort_values(by = ['state_avg_income'])
 
-special_states = np.array(['AK', 'HI', 'CO', 'UT', 'OK', 'LA', 'MI', 'IN', 'WV', 'SC', 'PA', 'NY', 'CA', 'NJ',
-                           'NC', 'AZ', 'MN', 'DC'])
+special_states = np.array(['AK', 'HI', 'CO', 'UT', 'OK', 'LA', 'MI', 'IN', 'WV', 'SC', 'PA', 'NY', 'CA', 'NJ', 
+                           'NC','AZ', 'MN', 'DC'])
 
-mark_spec_states = ['green' if (
-    x in special_states) else 'blue' for x in state_df.index]
-bplot = sns.barplot(data=state_df, x=state_df.index,
-                    y='op_cnt', palette=mark_spec_states)
+mark_spec_states = ['green' if (x in special_states) else 'blue' for x in state_df.index]
+bplot = sns.barplot(data = state_df, x = state_df.index, y = 'op_cnt', palette = mark_spec_states)
 
 plt.title('2.1) Mean Opioid Prescriptions by State')
 plt.xlabel('State Ordered By Mean Income (Higher Income Moving Right)')
 plt.ylabel('Average Amount of Opioid Prescriptions')
-bplot.set_xticklabels(bplot.get_xticklabels(), rotation=90, size=7)
+bplot.set_xticklabels(bplot.get_xticklabels(),rotation = 90, size = 7)
 
 # %%
 """
@@ -267,15 +269,14 @@ $\textbf{3)}$ Additionally, I want to also find out if long acting opioid treatm
 """
 
 # %%
-sns.lineplot(data=zip_df, x=zip_df['zip_avg_income'],
-             y=zip_df['LA_op_cnt'], color='red')
+sns.lineplot(data = zip_df, x  = zip_df['zip_avg_income'], y = zip_df['LA_op_cnt'], color = 'red')
 
 plt.title('3.1) Average Income vs. Long-Acting Prescription Mean Raw Line Graph')
 plt.xlabel('Average Income (in $1000)')
 plt.ylabel('Mean Long-Acting Opioid Prescriptions')
 
 # %%
-sns.displot(zip_df, x='zip_avg_income', y='LA_op_cnt', color='red')
+sns.displot(zip_df, x = 'zip_avg_income', y = 'LA_op_cnt', color = 'red')
 
 plt.title('3.2) Avg. Income vs. Long-Acting Prescription Heat Map')
 plt.xlabel('Average Income (in $1000)')
@@ -287,14 +288,14 @@ Once again, as our heatmap can be difficult to read, we will once again create a
 """
 
 # %%
-sns.displot(zip_df, x='zip_avg_income', y='LA_op_cnt', kind='kde', color='red')
+sns.displot(zip_df, x = 'zip_avg_income', y = 'LA_op_cnt', kind = 'kde', color = 'red')
 plt.title('3.3) Average Income vs. Prescription Mean KDE')
 plt.xlabel('Average Income (in $1000)')
 plt.ylabel('Mean Long-Acting Opioid Prescriptions')
 
 # %%
 """
-$\textbf{4)}$ Finally, I would like to see the change in prescriber rates for both regular and Long-Acting opioid prescriptions over the last 5 years. Our DataSet has 2 columns that hold this information, \textbf{op_rate} and \textbf{LA_op_rate}, which show percent changes over the course of the last 5 years for each individual doctor.
+$\textbf{4)}$ Finally, I would like to see the change in prescriber rates for both regular and Long-Acting opioid prescriptions over the last 5 years. Our DataSet has 2 columns that hold this information, $\textbf{op\_rate}$ and $\textbf{LA\_op\_rate}$, which show percent changes over the course of the last 5 years for each individual doctor.
 """
 
 # %%
@@ -324,5 +325,3 @@ C: Although there is similar decrease in frequency as income increases between r
 D: There has been a 11.91% increase in regular acting prescriptions and 4.24% increase in Long-Acting prescriptions for opioids over the last 5 years.
 
 """
-
-# %%
